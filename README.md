@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [107-2] Web Programming Final
+### Team 18
+### Project Name: quote-cookie
+#### A sentence for describing this project: Searching your own quote by your own key word.
+#### Deployment: https://quote-cookie.herokuapp.com
+#### Installation from downloading the file from github:
+##### Backend (in quote-cookie directory):
+```
+cd quote-backend
+npm install
+npm start
+```
+##### Front end:
+```
+git clone https://github.com/b05705019/quote-cookie.git
+cd quote-cookie
+cd fortune-quote-cookies
+npm install
+npm start
+```
+##### Note: backend will serve on port 3000, thus if terminal ask you to open the front end on another port just choose yes.
+#### Pages and functions in this website:
+1. live wall: a dynamic wall for showing key word that was searched by other people. 
+2. login page: including JWT authentication with redux in front end, if you successfully logged in, you won't have to login again before you logout.
+3. navigation page: navigate to QuoteSearch or PersonalPage
+4. seaching page: type in a word about you or what you care, and click on the square button to search for a quote.
+5. show page: 
+  * Show the quote according to what you type in the searching page. 
+  * Here I use a NLP function, NATURAL, of javascript in the backend, which can help find a similar quote for you.
+  * You can erase the quote on the screen by the cursor, just for relax. Using canvas to complete this work.
+  * click on the "like" or "dislike" button on the bottom right corner, to collect the quote to your collection or just give up the quote.
+6. collection page: show your collection according to the category of the quote, hover the picture of the man in the left of the screen, and will show a function bar, click on the cross symbol, you can go to add quote page.
+7. add quote page: type in the author name, quote content, and choose a category of the quote, click on the sealed button on the bottom right corner, and submit your own quote to the dataset. Notice: Whether you successfully added the quote will be shown on the bottom of the screen.
 
-## Available Scripts
+#### Reference:
+1. JWT authentication - front end: https://reurl.cc/NMn7q
+2. JWT authentication - backend: https://reurl.cc/Qqmvb
 
-In the project directory, you can run:
+#### Gain knowledge:
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Demo link:
