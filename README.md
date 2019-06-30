@@ -35,7 +35,7 @@ npm start
 #### Reference:
 1. JWT authentication - front end: https://reurl.cc/NMn7q
 2. JWT authentication - backend: https://reurl.cc/Qqmvb
-
 #### Gain knowledge:
-
+In this experience, front end did cost me a lot of time, especially live wall and show page. The UI design of both page was inspired by the google trend visualizer and a animal.cc. Although there are some information about how to showing text on canvas on the Internet, to turn them into react framework still needs a lot of time. Not to mention that there is no related code for live wall. To finish all of the job by myself is not easy, but after finish the project, I am sure that I've learned more than the midterm project. And the skills I learn this time includes redux, promise, and the process of authoentication in a react project, which must be helpful in the future. It is a very great experience to create a project and design, implement, and deploy only by my own, thanks to this course. 
 #### Demo link:
+https://youtu.be/CMp2RQVHL0A
