@@ -2,7 +2,7 @@
 ### Team 18
 ### Project Name: quote-cookie
 #### A sentence for describing this project: Searching your own quote by your own key word.
-#### Deployment: https://quote-cookie.herokuapp.com
+#### Deployment: https://quote-cookie.herokuapp.com (login ID: test, password: test)
 #### Installation from downloading the file from github:
 ##### Backend (in quote-cookie directory):
 ```
