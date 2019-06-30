@@ -61,11 +61,11 @@ class App extends Component {
             <Switch>
               
               <Route exact path="/" component={LiveWall} />
-              <Route path="/LoginPage" render={() => <LoginPage userName={this.state.userName} 
+              <Route exact path="/LoginPage" render={() => <LoginPage userName={this.state.userName} 
                     passWord={this.state.passWord} saveUserName={this.saveUserName} />} />
-
-              <PrivateRoute path="/NavPage" component={NavPage} />
-              
+              <Redirect from="/LoginPage" to="/LoginPage" />
+              <PrivateRoute exact path="/NavPage" component={NavPage} />
+              <Redirect from="/NavPage" to="/NavPage" />
               {/* <Route path="/NavPage" render={(props) => 
               (cookie.load("userName") === "" || cookie.load("passWord") === "" || this.state.checkId === false) ?
                 (<Redirect to="/LoginPage" />):

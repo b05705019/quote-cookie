@@ -29,7 +29,7 @@ class Particle {
     this.cR = this.ran[0] > 0.99 ? 30: 2;
     this.cAng = this.ran[1]*360;
     this.cW = 0.03;
-    this.wait = this.cR > 10 ? this.ran[1]*20: this.ran[1]*40+30;
+    this.wait = this.cR > 10 ? this.ran[1]*20: this.ran[1]*20+30;
 
     this.color = {r:0, g:0, b:0};
     this.opecity = 0;
@@ -69,6 +69,7 @@ class Show extends Component {
 
     
     console.log("init quote: ", quote);
+    this.doneAmount = 0;
     let shows = quote.split(/(?=[,.]\s)/g);
     let display = [""]
     for(let s of shows){
@@ -187,6 +188,7 @@ class Show extends Component {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
     window.addEventListener("mousemove", this.onMouseMove);
+    window.addEventListener("click", ()=>this.init(this.props.quote));
     
     // this.init();
     requestAnimationFrame(this.renderCanvas);
@@ -195,6 +197,9 @@ class Show extends Component {
   componentWillUnmount() {
     this.over = true;
     window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener("mousemove", this.onMouseMove);
+    window.removeEventListener("click", ()=>this.init(this.props.quote));
+
   }
   
   updateWindowDimensions = ()=>{

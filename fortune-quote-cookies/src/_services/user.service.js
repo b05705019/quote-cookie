@@ -1,5 +1,6 @@
 // import config from 'config';
-import env from '../env';
+// import env from '../env';
+import env from '../url';
 import { authHeader } from '../_helpers';
 
 export const userService = {
@@ -15,8 +16,9 @@ function login(username, password) {
         body: JSON.stringify({ username, password })
     };
 
+    // console.log('env', env.url);
     // return fetch(`${config.apiUrl}/users/authenticate`, requestOptions)
-    return fetch('http://localhost:3000/users/authenticate', requestOptions)
+    return fetch(env.userAuth, requestOptions)
         .then(handleResponse)
         .then(user => {
             // store user details and jwt token in local storage to keep user logged in between page refreshes

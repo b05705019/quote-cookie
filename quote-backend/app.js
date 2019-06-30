@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // post profile to database
-app.post('/profile', (req, res) => {
+app.post('/api/profile', (req, res) => {
     
     console.log('this is post /post');
     
@@ -57,7 +57,7 @@ app.post('/profile', (req, res) => {
 });
 
 // update collection to profiles
-app.post('/collect', (req, res) => {
+app.post('/api/collect', (req, res) => {
     
   console.log('this is post /collect');
   
@@ -82,7 +82,7 @@ app.post('/collect', (req, res) => {
 });
 
 // post quote to database, the least important
-app.post('/quote', (req, res) => {
+app.post('/api/quote', (req, res) => {
     const body = req.body;
     console.log('this is quote body', body);
     res.send('quote successfully posted!');
@@ -104,7 +104,7 @@ app.post('/quote', (req, res) => {
 });
 
 // get data from keys
-app.get('/key', (req, res) => {
+app.get('/api/key', (req, res) => {
   db.on('error', error => {
       console.log(error);
   });
@@ -122,7 +122,7 @@ app.get('/key', (req, res) => {
 });
 
 // get data from profiles (including collections)
-app.get('/profile', (req, res) => {
+app.get('/api/profile', (req, res) => {
     db.on('error', error => {
         console.log(error);
     });
@@ -138,7 +138,7 @@ app.get('/profile', (req, res) => {
 });
 
 // post key to database and get data from quote_cookies
-app.get('/quote', (req, res) => {
+app.get('/api/quote', (req, res) => {
   // post key to database
   const body = req.body;
   console.log('this is quote body', body);
@@ -198,7 +198,7 @@ app.get('/quote', (req, res) => {
 });
 
 // use JWT auth to secure the api
-app.use(jwt());
+app.use('/users', jwt());
 
 // api routes
 app.use('/users', require('./users/users.controller'));

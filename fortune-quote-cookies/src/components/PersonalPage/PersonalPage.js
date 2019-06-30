@@ -45,8 +45,8 @@ class PersonalPage extends Component {
         </div>
 
         <Switch>
-          <Route path="/PersonalPage/Collect" exact component={Collect} />
-          <Route path="/PersonalPage/Add" exact component={Add} />
+          <Route exact path="/PersonalPage/Collect" exact component={Collect} />
+          <Route exact path="/PersonalPage/Add" exact component={Add} />
           {/* <Route path="/PersonalPage/Success" exact component={Success} /> */}
           <Redirect from="/" to="/PersonalPage/Collect" />
         </Switch>

@@ -73,7 +73,7 @@ class LoginPage extends Component {
             <div className="login-right-bottom">
               <div className="login-right-bottom-left">
                 <div className="password-container"></div>
-                <input className="password-input" placeholder="YUOR PASSWORD" name="password" value={password} onChange={this.handleChange}/>
+                <input className="password-input" type="password" placeholder="YUOR PASSWORD" name="password" value={password} onChange={this.handleChange}/>
               </div>
               <div className="login-right-bottom-right">
               <div className="go-container" onClick={this.handleSubmit}></div>

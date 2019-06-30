@@ -31,9 +31,9 @@ class QuoteSearch extends Component {
         </div>
         
         <Switch>
-          <Route path="/QuoteSearch/Search" exact component={Search} />
-          <Route path="/QuoteSearch/Show" exact component={Show} />
-          <Route path="/QuoteSearch/Keep" exact component={Keep} />
+          <Route exact path="/QuoteSearch/Search" exact component={Search} />
+          <Route exact path="/QuoteSearch/Show" exact component={Show} />
+          <Route exact path="/QuoteSearch/Keep" exact component={Keep} />
           <Redirect from="/" to="/QuoteSearch/Search" />
         </Switch>
       </div>
