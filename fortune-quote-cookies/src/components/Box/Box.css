@@ -1,0 +1,7 @@
+.box-container {
+	display: inline-block;
+	width: 20vw;
+	height: 20vh;
+	position: relative;
+	overflow: hidden;
+}

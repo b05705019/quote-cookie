@@ -1,0 +1,144 @@
+.Collect {
+    background: rgb(127, 143, 105);
+}
+
+.collect-bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.collect-bg-2 {
+    width: 25vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background: rgb(224, 219, 194);
+    background-image: linear-gradient(to bottom, rgb(221, 205, 187), rgb(219, 213, 185) 110%);
+    position: relative;
+    border-right: rgb(168, 151, 139) solid 0.9px; 
+    border-left: rgb(168, 151, 139) solid 0.9px; 
+    animation-name: slide-in;
+    animation-duration: 2s;
+}
+
+.collect-bg-3 {
+    width: 67vw;
+    height: 100vh;
+    overflow: scroll;
+    background: rgb(207, 203, 180);
+    background: rgb(224, 219, 194);
+    background-image: linear-gradient(to bottom, rgb(221, 205, 187), rgb(219, 213, 185) 110%);
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 3s;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(0%, 100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+/* .my-collection {
+    position: fixed;
+    text-align: center;
+} */
+
+.my-collection-text {
+    padding: 2em;
+    padding-left: 0; 
+    padding-bottom: 1em;
+    font-size: 0.4em;
+    font-family: 'Cinzel Decorative', cursive;
+    white-space: nowrap;
+}
+
+.category-list-container {
+    /* padding-top: 20px;  */
+    list-style: none;
+    text-align: left;
+    font-size: 2.5em;
+    line-height: 12vh;
+    /* color: rgb(117, 101, 91); */
+    font-family: 'Cinzel Decorative', cursive;
+    animation-name: slide-in;
+    animation-duration: 3s;
+}
+
+.quote-list-container {
+    list-style: none;
+    text-align: left;
+    font-size: 1.5em;
+    /* padding-top: 0.5vh; */
+    color: rgb(114, 101, 94);
+    font-family: 'Poiret One', cursive;
+    animation-name: slide-in;
+    animation-duration: 3s;
+}
+
+.quote-item {
+    margin: 1.5em 0;
+    margin-right: 1.5em;
+}
+
+.category-item {
+    /* transition: 1s; */
+    padding-left: 20px; 
+    animation-name: text-opacity-return;
+    animation-duration: 1s;
+    color: rgb(88, 78, 72);
+    white-space: nowrap;
+}
+
+hr {
+    border: rgb(168, 151, 139) solid 0.5px;
+}
+
+.category-item:hover {
+    animation-name: text-opacity;
+    animation-duration: 1s;
+    /* color: white; */
+    cursor: pointer;
+    /* transition: 1s; */
+    padding-left: 40px;
+    color: rgba(88, 78, 72, 0.157);
+    border-left: rgb(129, 116, 106) solid 2px;
+    background: rgba(195, 181, 165, 0.513);
+}
+
+@keyframes text-opacity {
+    from {
+        color: rgb(88, 78, 72);
+    }
+    to {
+        padding-left: 20px;
+        color: rgba(88, 78, 72, 0.157);
+    }
+}
+
+@keyframes text-opacity-return {
+    from {
+        padding-left: 20px;
+        color: rgba(88, 78, 72, 0.157);
+    }
+    to {
+        color: rgb(88, 78, 72);
+    }
+}
+
+.quote-context {
+    font-size: 1.2em;
+    color:rgb(88, 78, 72);
+}
+
+.quote-author {
+    text-align: right;
+    margin: 1vh;
+    margin-right: 2vh;
+    font-size: 1em;
+    color:rgb(86, 93, 75);
+}
+

@@ -1,0 +1,216 @@
+.PersonalPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: rgb(127, 143, 105);
+}
+
+.personal-bg-1 {
+    width: 9vw;
+    height: 100vh;
+    background: rgb(168, 151, 139);
+    background: rgb(224, 219, 194);
+    background-image: linear-gradient(to bottom, rgb(221, 205, 187), rgb(219, 213, 185) 110%);
+    position: relative;
+    /* transform: translate(-100%, 0%); */
+    animation-name: slide-in;
+    animation-duration: 1s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(0%, 100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.personal-profile {
+    position: absolute;
+    top: 40%;
+    width: 5vw;
+    height: 5vw;
+    padding-top: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow: hidden;
+    border: rgb(168, 151, 139) solid 2px;
+    border-radius: 100%;
+    animation-name: slide-to-bottom;
+    animation-duration: 1s;
+    transition: 1s;
+    /* z-index: 1; */
+    /* position: absolute;
+    top: 20%;
+    left: 20%; */
+}
+
+.personal-bg-1:hover .personal-profile {
+    position: absolute;
+    top: 25%;
+    width: 5vw;
+    height: 5vw;
+    padding-top: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow: hidden;
+    border: rgb(168, 151, 139) solid 2px;
+    border-radius: 100%;
+    animation-name: slide-to-top;
+    animation-duration: 1s;
+    cursor: pointer;
+    
+    /* top: 20%;
+    left: 20%; */
+}
+
+.personal-nav {
+    position: absolute;
+    top: 37%;
+    animation-name: nav-opacity-out;
+    animation-duration: 0.5s;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.personal-bg-1:hover .personal-nav {
+    visibility: visible;
+    animation-name: nav-opacity;
+    animation-duration: 1s;
+}
+
+.personal-menu {
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    /* border: black solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-menu:hover {
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    /* border: black solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg);
+    transition: 1s;
+}
+
+/* .personal-hori-line-top {
+    width: 45px;
+    height: 1px;
+    margin-bottom: 15px;
+    background: white;
+} */
+
+.personal-hori-line {
+    width: 40px;
+    height: 1px;
+    /* margin-top: 15px; */
+    background: white;
+}
+
+.personal-vert-line {
+    width: 1px;
+    height: 60px;
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 23px;
+}
+
+.personal-square {
+    margin: 20px; 
+    margin-left: 12px;
+    margin-right: 0;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    border: white solid 1px;
+    background: transparent;
+}
+
+.personal-square:hover {
+    margin: 20px; 
+    margin-left: 12px;
+    margin-right: 0;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-315deg);
+    -ms-transform: rotate(-315deg); /* IE 9 */
+    -webkit-transform: rotate(-315deg);
+    border: white solid 1px;
+    background: transparent;
+    transition: 1s;
+}
+
+.personal-cross:hover {
+    opacity: 0;
+    transition: 1s;
+}
+
+@keyframes nav-opacity {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes nav-opacity-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-to-top {
+    0% {
+        top: 40%;
+    }
+    100% {
+        top: 25%;
+    }
+}
+
+@keyframes slide-to-bottom {
+    from {
+        top: 25%;
+    }
+    to {
+        top: 40%;
+    }
+}
+
+.logout {
+    position: absolute;
+    bottom: 1%;
+    left: 20%;
+    cursor: pointer;
+}

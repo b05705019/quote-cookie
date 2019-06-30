@@ -1,0 +1,77 @@
+.QuoteSearch {
+}
+
+.quote-function {
+    /* background: blue; */
+    width: 20vw;
+    height: 20vw;
+    position: fixed;
+    top: 35%;
+    left: 40px;
+    z-index: 1;
+}
+.quotesearch-line {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+.quotesearch-line:hover {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    transform: rotate(450deg);
+    -ms-transform: rotate(450deg); /* IE 9 */
+    -webkit-transform: rotate(450deg);
+    transition: 1s;
+}
+.quotesearch-line-top {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 45px;
+    height: 1px;
+    /* background: white; */
+    background: rgb(98, 98, 98);
+}
+
+.quotesearch-vert {
+    position: absolute;
+    top: 50px;
+    left: 21px;
+    height: 70px;
+    width: 1px;
+    background: rgb(98, 98, 98);
+    z-index: 1;
+}
+
+.quotesearch-livewall {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    border: rgb(98, 98, 98) solid 1px;
+    background: transparent;
+    z-index: 1;
+    transition: 1s;
+}
+
+.quotesearch-livewall:hover {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(315deg);
+    -ms-transform: rotate(315deg); /* IE 9 */
+    -webkit-transform: rotate(315deg);
+    border: white solid 1px;
+    background: transparent;
+    z-index: 1;
+    transition: 1s;
+}
+
+

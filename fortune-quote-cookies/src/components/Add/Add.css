@@ -1,0 +1,120 @@
+.add-bg-2 {
+    width: 91vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background: rgb(224, 219, 194);
+    background-image: linear-gradient(to bottom, rgb(221, 205, 187), rgb(219, 213, 185) 110%);
+    position: relative;
+    border-right: rgb(168, 151, 139) solid 0.9px; 
+    border-left: rgb(168, 151, 139) solid 0.9px; 
+    animation-name: slide-in;
+    animation-duration: 2s;
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add-page {
+    margin: 20px;
+    font-size: 2.2em;
+}
+
+.add-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.add-quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.add-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.add-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.text {
+    margin: 10px;
+}
+
+.add-bg-2 input {
+    outline: none;
+    border: none;
+    border-bottom: rgb(168, 151, 139) solid 1.5px;
+    background: transparent;
+    width: 20vw;
+    font-size: 1.2em;
+    font-family: 'Poiret One', cursive;
+    color: rgb(168, 151, 139);
+}
+
+
+.add-bg-2 textarea {
+    outline: none;
+    border: rgb(168, 151, 139) solid 1.5px;
+    border-bottom: rgb(168, 151, 139) solid 1.5px;
+    border-radius: 10px;
+    background: transparent;
+    width: 500px;
+    height: 200px;
+    font-family: 'Poiret One', cursive;
+    color: rgb(168, 151, 139);
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+.add-context {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.seal{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.seal:hover {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    filter: drop-shadow(5px 5px 7px rgba(116, 116, 116, 0.7));
+}
+
+.add-alert {
+    /* visibility: hidden; */
+    color: rgb(73, 10, 10);
+    margin: 10px;
+    position: absolute;
+    bottom: 40px;
+
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 0.7em;
+}
+
+.suc {
+    visibility: hidden;
+}
+
+.wrong {
+    visibility: hidden;
+}

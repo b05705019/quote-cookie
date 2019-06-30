@@ -1,0 +1,29 @@
+#scene {
+	background: white;
+	width: 100vw;
+	height: 100vh;
+}
+.check-button {
+	position: fixed;
+	bottom: 3%;
+	right: 7%;
+	z-index: 1;
+	color: black;
+}
+
+.check-button button {
+	font-size: 20px;
+	background: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.check-button button:hover {
+	font-size: 20px;
+	background: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	filter: drop-shadow(5px 5px 4px rgba(83, 83, 83, 0.7));
+}

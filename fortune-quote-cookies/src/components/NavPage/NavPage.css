@@ -1,0 +1,209 @@
+.NavPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* cursor: url('./noun_Cross_468199.svg'), auto; */
+    background: rgb(53, 53, 53);
+    /* background: white; */
+    animation-name: nav-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-int;
+}
+@keyframes nav-in {
+    0% {
+        opacity: 0;
+        height: 1vh;
+    }
+    50% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 1;
+        height: 100vh;
+    }
+}
+
+.nav-container {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: yellow; */
+    position: absolute;
+}
+
+.vertical-line {
+    height: 20px;
+    border: none;
+    border-right: white solid 1px;
+    padding-right: 20px;
+    background: transparent;
+}
+
+.nav-text2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-text {
+    color: rgb(238, 225, 222);
+    text-decoration: none;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.8em;
+    transition: 1s;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-bar {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background: yellow; */
+    position: absolute;
+    left: 5%;
+}
+
+.nav-text:hover {
+    color: rgb(53, 53, 53);
+    transition: 1s;
+}
+
+.diamond-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    /* margin: 0 50px; */
+}
+
+.diamond-container-right {
+    position: absolute;
+    left: 75%;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /* background: blue; */
+}
+.nav-diamond-left {
+    position: absolute;
+    left: 1%;
+    width: 5px;
+    height: 5px;
+    overflow: hidden;
+    border: white solid 2px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    /* background: blue; */
+    
+}
+
+.nav-diamond-right {
+    width: 5px;
+    height: 5px;
+    overflow: hidden;
+    border: white solid 2px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+}
+
+.nav-line {
+    border: none;
+    border-bottom:white solid 1px;
+    width: 150px;
+}
+
+.nav-cross1 {
+    font-size:100px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    opacity: 0.3;
+    transition: 1s;
+
+}
+
+.nav-cross1:hover {
+    font-size:100px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.nav-cross2 {
+    font-size:50px;
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    opacity: 0.5;
+    color: rgb(191, 166, 149);
+    transition: 1s;
+}
+
+.nav-cross2:hover {
+    font-size:50px;
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    opacity: 0;
+    color: rgb(191, 166, 149);
+    transition: 1s;
+}
+
+.cross-symbol1 {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    opacity: 0.4;
+}
+
+.cross-symbol2 {
+    position: absolute;
+    top: 75%;
+    left: 17%;
+    opacity: 0.8;
+}
+
+.line-hori {
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    top: 19px;
+    background-color: white;
+}
+
+.line-vert {
+    width: 2px;
+    height: 40px;
+    left: 19px;
+    background-color: white;
+    position: absolute;
+}
+
+.cross-symbol3 {
+    position: absolute;
+    top: 18%;
+    left: 13%;
+    opacity: 0.3;
+}
+
+
+/* * {
+    border: yellow solid 1px;
+} */
