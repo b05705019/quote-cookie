@@ -1,23 +1,51 @@
-### [107-2] Web Programming Final
-### Team 18
-### Project Name: quote-cookie
-#### A sentence for describing this project: Searching your own quote by your own key word.
-#### Deployment: https://quote-cookie.herokuapp.com (login ID: test, password: test)
-#### Installation from downloading the file from github:
-##### Backend (in quote-cookie directory):
-```
-cd quote-backend
-npm install
-npm start
-```
-##### Front end:
-```
-git clone https://github.com/b05705019/quote-cookie.git
-cd quote-cookie
-cd fortune-quote-cookies
-npm install
-npm start
-```
+## Quote-cookie
+#### Description
+
+This project, named "Quote cookie" is to practice how to use React.js with node.js.
+
+<img width="720" alt="Screen Shot 2021-05-12 at 12 32 59 AM" src="https://user-images.githubusercontent.com/33059448/117852237-b2990a00-b2b9-11eb-9d90-7ab3e116b9bb.png">
+
+Quote cookie is a website provides people to get a personal quote according to any keyword that a user provides, the concept is from "Fortune cookie".
+
+Quote cookie has been deployed to Heroku since 2019, and the link is: https://quote-cookie.herokuapp.com/.
+Just use username: `test`, and password `test` to pass the login step.
+
+There is also a demo video on youtube: https://youtu.be/6Q-Wb7VTKec (include feature demo and technical details)
+
+Here is a simple use case: <br/>
+Cindy is in a bad mood today, and she wants some words to cheer her up. 
+She can visit this website and enter any keyword she want (for example again, she type coffee).
+Then, Quote cookie would show her a related positive quote. 
+Cindy can choose to collect the quote to her place or drop it, she can also chaeck out how many quotes did she collect.
+Besides query quotes from quote cookie, Cindy can also write down her own quote to this system, and someone would get a quote which author is Cindy someday.
+
+More development or feature details are listed below.
+
+
+
+
+---
+
+#### [107-2] Web Programming Final
+#### Project Description - Team 18
+* Project Name: quote-cookie
+* A sentence for describing this project: Searching your own quote by your own key word.
+* Deployment: https://quote-cookie.herokuapp.com (login ID: test, password: test)
+* Installation from downloading the file from github:
+  * Backend (in quote-cookie directory):
+    ```
+    cd quote-backend
+    npm install
+    npm start
+    ```
+  * Front end:
+    ```
+    git clone https://github.com/b05705019/quote-cookie.git
+    cd quote-cookie
+    cd fortune-quote-cookies
+    npm install
+    npm start
+    ```
 ##### Note: backend will serve on port 3000, thus if terminal ask you to open the front end on another port just choose yes.
 #### Pages and functions in this website:
 1. live wall: a dynamic wall for showing key word that was searched by other people. 
@@ -38,5 +66,3 @@ npm start
 3. [Dataset](https://www.kaggle.com/akmittal/quotes-dataset)
 #### Gain knowledge:
 In this experience, front end did cost me a lot of time, especially live wall and show page. The UI design of both page was inspired by the google trend visualizer and a animal.cc. Although there are some information about how to showing text on canvas on the Internet, to turn them into react framework still needs a lot of time. Not to mention that there is no related code for live wall. To finish all of the job by myself is not easy, but after finish the project, I am sure that I've learned more than the midterm project. And the skills I learn this time includes redux, promise, and the process of authoentication in a react project, which must be helpful in the future. It is a very great experience to create a project and design, implement, and deploy only by my own, thanks to this course. 
-#### Demo link:
-https://youtu.be/CMp2RQVHL0A
