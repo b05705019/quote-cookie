@@ -1,7 +1,7 @@
 ## Quote-cookie
 #### Description
 
-This project, named "Quote cookie" is to practice how to use React.js with node.js.
+This project, named "Quote cookie" is to practice how to use React.js with node.js, which is my first web project.
 
 <img width="720" alt="Screen Shot 2021-05-12 at 12 32 59 AM" src="https://user-images.githubusercontent.com/33059448/117852237-b2990a00-b2b9-11eb-9d90-7ab3e116b9bb.png">
 
@@ -20,9 +20,6 @@ Cindy can choose to collect the quote to her place or drop it, she can also chae
 Besides query quotes from quote cookie, Cindy can also write down her own quote to this system, and someone would get a quote which author is Cindy someday.
 
 More development or feature details are listed below.
-
-
-
 
 ---
 
